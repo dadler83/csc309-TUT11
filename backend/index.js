@@ -8,8 +8,11 @@ dotenv.config();
 const app = express();
 
 const FRONTEND_URL = process.env.FRONTEND_URL || "http://localhost:5173";
+console.log("Frontend Url: ", FRONTEND_URL);
 let corsOptions = {
     origin: FRONTEND_URL,
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization']
 }
 
 // TODO: complete me (CORS)
