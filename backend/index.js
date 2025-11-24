@@ -12,7 +12,7 @@ console.log("Frontend Url: ", FRONTEND_URL);
 let corsOptions = {
     origin: FRONTEND_URL,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-    allowedHeaders: ['Content-Type', 'Authorization']
+    allowedHeaders: ['Content-Type', 'Authorization', 'Access-Control-Allow-Origin']
 }
 
 // TODO: complete me (CORS)
